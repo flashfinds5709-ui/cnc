@@ -33,6 +33,7 @@ User stories:
 8. As a visitor, I can read the About Me section and Why choose us dropdown.
 9. As a visitor, I can see the Long Island only operating area and bold asterisk water supply notice.
 10. As a visitor, all dropdowns are closed until I click on them.
+11. As a visitor, Call, Book, and Email CTA buttons appear next to each other on desktop and mobile.
 
 ## Testing Plan
 - Lint/build frontend.
@@ -46,3 +47,4 @@ User stories:
 - Preview 502 was fixed by patching craco.config.js dev server deprecated option compatibility.
 - Testing Agent completed end-to-end validation with 100% frontend success and no open issues.
 - Update complete: all service dropdowns and Why choose us dropdown are now closed by default; Testing Agent confirmed 100% success.
+- Update complete: Call, Book, and Email buttons now display side-by-side in hero, final CTA, and mobile quick CTA bar; Testing Agent confirmed 100% success.
