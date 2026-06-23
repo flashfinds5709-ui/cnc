@@ -23,7 +23,7 @@ const PHONE_DISPLAY = "(631) 401-7026";
 const PHONE_LINK = "tel:6314017026";
 const CONSULTATION_LINK = "https://forms.gle/PLACEHOLDER";
 const PLACEHOLDER_EMAIL = "placeholder@example.com";
-const GMAIL_LINK = `https://mail.google.com/mail/?view=cm&fs=1&to=${PLACEHOLDER_EMAIL}&su=C%26C%20Property%20Cleaning%20Consultation&body=Hi%20Carlo%20%26%20Collin%2C%0A%0AI%27d%20like%20a%20quote%20for%20power%20washing%20on%20Long%20Island.%0A%0AService%20needed%3A%20%0AAddress%3A%20%0APreferred%20date%2Ftime%3A%20%0A%0AThanks%21`;
+const GMAIL_LINK = `https://mail.google.com/mail/?view=cm&fs=1&to=${PLACEHOLDER_EMAIL}&su=C%26C%20Property%20Care%20Consultation&body=Hi%20Carlo%20%26%20Collin%2C%0A%0AI%27d%20like%20a%20quote%20for%20power%20washing%20on%20Long%20Island.%0A%0AService%20needed%3A%20%0AAddress%3A%20%0APreferred%20date%2Ftime%3A%20%0A%0AThanks%21`;
 
 const heroImage =
   "https://images.pexels.com/photos/30958770/pexels-photo-30958770.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200";
@@ -126,7 +126,7 @@ function CtaButtons({ compact = false, location = "hero" }) {
         <a
           data-testid={`${location}-call-button`}
           href={PHONE_LINK}
-          aria-label={`Call C&C Property Cleaning at ${PHONE_DISPLAY}`}
+          aria-label={`Call C&C Property Care at ${PHONE_DISPLAY}`}
         >
           <Phone className="h-4 w-4" />
           Call {PHONE_DISPLAY}
@@ -150,7 +150,7 @@ function CtaButtons({ compact = false, location = "hero" }) {
             href={GMAIL_LINK}
             target="_blank"
             rel="noreferrer"
-            aria-label="Open Gmail to email C&C Property Cleaning"
+            aria-label="Open Gmail to email C&C Property Care"
           >
             <Mail className="h-4 w-4" />
             Email Us
@@ -170,7 +170,7 @@ function Header() {
             C&C
           </span>
           <span>
-            <strong>C&C Property Cleaning</strong>
+            <strong>C&C Property Care</strong>
             <small>Long Island, NY</small>
           </span>
         </a>
@@ -283,7 +283,7 @@ function ServicesSection() {
           <span className="eyebrow">Services</span>
           <h2 id="services-heading">Pick what needs cleaning.</h2>
           <p>
-            Expand a service to see what C&C Property Cleaning can help with. Every visit is focused on simple scheduling, careful work, and clean results.
+            Expand a service to see what C&C Property Care can help with. Every visit is focused on simple scheduling, careful work, and clean results.
           </p>
           <div className="notice-box" data-testid="water-supply-notice">
             <strong>*Customer must provide access to water supply if required.</strong>
@@ -424,7 +424,7 @@ function App() {
       </main>
       <footer className="site-footer">
         <div className="container footer-inner">
-          <p>© 2026 C&C Property Cleaning. Serving Long Island, New York.</p>
+          <p>© 2026 C&C Property Care. Serving Long Island, New York.</p>
           <a data-testid="footer-email-link" href={GMAIL_LINK} target="_blank" rel="noreferrer">
             {PLACEHOLDER_EMAIL}
           </a>

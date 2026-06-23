@@ -1,10 +1,10 @@
 [
   {
-    "content": "Update accordions so all dropdowns are closed by default",
+    "content": "Rename company from C&C Property Cleaning to C&C Property Care across visible page and docs",
     "status": "completed"
   },
   {
-    "content": "Validate frontend and test closed-by-default dropdown behavior",
-    "status": "completed"
+    "content": "Validate rename with lint/build",
+    "status": "in_progress"
   }
 ]

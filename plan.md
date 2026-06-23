@@ -1,10 +1,10 @@
-# C&C Property Cleaning Implementation Plan
+# C&C Property Care Implementation Plan
 
 ## Problem Statement
-Build a one-page landing page for C&C Property Cleaning, a Long Island New York power washing company. The page should be simple and not bulky, using green, blue, and white. It should include top tabs for Services and About Me, strong instant CTAs, many high-quality stock power-washing photos including before/after style pictures, call button for 631-401-7026, placeholder Google Form consultation button, and placeholder Gmail compose email button.
+Build a one-page landing page for C&C Property Care, a Long Island New York power washing company. The page should be simple and not bulky, using green, blue, and white. It should include top tabs for Services and About Me, strong instant CTAs, many high-quality stock power-washing photos including before/after style pictures, call button for 631-401-7026, placeholder Google Form consultation button, and placeholder Gmail compose email button.
 
 ## Required Content
-- Company name: C&C Property Cleaning
+- Company name: C&C Property Care
 - Services: Garbage cans, fences, driveways, wooden decks, custom inquiries
 - Garbage cans text: first time customers get $10 per garbage can, after its $15 per garbage can
 - About text: Carlo and Collin, cousins from Holtsville, wanting to make your property as clean as theirs.
@@ -23,7 +23,7 @@ Skipped. This is a static one-page marketing site with placeholder outbound link
 
 ## Phase 2: Main Landing Page Development
 User stories:
-1. As a visitor, I can immediately understand C&C Property Cleaning offers power washing on Long Island.
+1. As a visitor, I can immediately understand C&C Property Care offers power washing on Long Island.
 2. As a visitor, I can call 631-401-7026 from a prominent CTA.
 3. As a visitor, I can click Book a Consultation and be routed to a placeholder Google Form link.
 4. As a visitor, I can click Email and open Gmail compose with a placeholder email prefilled.

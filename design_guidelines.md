@@ -1,6 +1,6 @@
 {
   "project": {
-    "name": "C&C Property Cleaning — One-page Landing",
+    "name": "C&C Property Care — One-page Landing",
     "type": "landing_page",
     "audience": "Long Island, NY homeowners/property owners needing power washing",
     "primary_success_action": "Tap Call button (631-401-7026) or Book a Consultation (placeholder Google Form)",
