@@ -58,5 +58,7 @@ User stories:
 
 - Update complete: email CTAs now use propertycare.cnc@gmail.com; Testing Agent confirmed 100% success.
 
+- Update complete: added richer blue/green color accents across the site while keeping the layout simple; Testing Agent confirmed 100% success.
+
 
 
