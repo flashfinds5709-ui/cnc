@@ -342,18 +342,12 @@ function AboutSection() {
         </div>
         <Card className="why-card">
           <CardContent className="why-card-content">
-            <Accordion type="single" collapsible>
-              <AccordionItem value="why-us" className="why-item">
-                <AccordionTrigger className="why-trigger" data-testid="why-choose-us-accordion">
-                  Why choose us?
-                </AccordionTrigger>
-                <AccordionContent className="why-content">
-                  <p>
-                    Young and ready to earn your business however necessary. We&apos;ve helped maintain our parents property since we were young, and are ready to put the same effort into your property as if it were our own.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
+            <div className="why-static" data-testid="why-choose-us-section">
+              <h3>Why choose us?</h3>
+              <p>
+                Young and ready to earn your business however necessary. We&apos;ve helped maintain our parents property since we were young, and are ready to put the same effort into your property as if it were our own.
+              </p>
+            </div>
             <div className="why-image-row">
               <img
                 src="https://images.unsplash.com/photo-1555636222-cae831e670b3?auto=format&fit=crop&w=800&q=85"

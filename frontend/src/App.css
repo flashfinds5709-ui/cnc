@@ -542,21 +542,21 @@ img {
   padding: 20px !important;
 }
 
-.why-item {
-  border: 0 !important;
+.why-static {
+  padding: 8px 4px 18px;
 }
 
-.why-trigger {
-  padding: 14px 4px 18px !important;
+.why-static h3 {
+  margin: 0 0 12px;
   font-family: 'Space Grotesk', sans-serif;
   color: #0f172a;
-  font-size: 1.25rem !important;
-  font-weight: 700 !important;
-  text-decoration: none !important;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
-.why-content {
-  padding: 0 4px 18px !important;
+.why-static p {
+  margin: 0;
   color: #475569;
   line-height: 1.7;
   font-size: 1rem;

@@ -1,10 +1,10 @@
 [
   {
-    "content": "Remove unused service bullet data and styles after dropdown cleanup",
+    "content": "Convert Why Choose Us from dropdown to always-visible content",
     "status": "completed"
   },
   {
-    "content": "Finalize validation and summary for Services dropdown cleanup",
-    "status": "completed"
+    "content": "Validate static Why Choose Us section with build and testing",
+    "status": "in_progress"
   }
 ]
