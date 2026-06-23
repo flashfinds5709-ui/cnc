@@ -1,10 +1,10 @@
 [
   {
-    "content": "Replace placeholder email with propertycare.cnc@gmail.com across CTAs",
+    "content": "Add richer blue/green color accents throughout the landing page without making it bulky",
     "status": "completed"
   },
   {
-    "content": "Validate email CTA update with build and testing",
-    "status": "completed"
+    "content": "Validate colorful visual update with lint/build and frontend testing",
+    "status": "in_progress"
   }
 ]

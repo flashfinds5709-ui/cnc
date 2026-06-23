@@ -292,7 +292,11 @@ function ServicesSection() {
         </div>
         <Accordion type="single" collapsible className="service-accordion">
           {serviceItems.map((service) => (
-            <AccordionItem value={service.value} key={service.value} className="service-item">
+              <AccordionItem
+                value={service.value}
+                key={service.value}
+                className={`service-item service-${service.value}`}
+              >
               <AccordionTrigger className="service-trigger" data-testid={service.testId}>
                 <span>{service.title}</span>
               </AccordionTrigger>
