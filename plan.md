@@ -14,7 +14,7 @@ Build a one-page landing page for C&C Property Care, a Long Island New York powe
 - Uploaded C&C Property Care logo should be used wherever the brand mark appears.
 
 ## User Choices / Clarifications
-- Google Form: use placeholder link for now
+- Google Form: use real Google Form link for now
 - Email: use placeholder email for now
 - Photos: use high-quality stock power-washing photos
 - Tone: simple and not too bulky
@@ -27,7 +27,7 @@ Skipped. This is a static one-page marketing site with placeholder outbound link
 User stories:
 1. As a visitor, I can immediately understand C&C Property Care offers power washing on Long Island.
 2. As a visitor, I can call 631-401-7026 from a prominent CTA.
-3. As a visitor, I can click Book a Consultation and be routed to a placeholder Google Form link.
+3. As a visitor, I can click Book a Consultation and be routed to the provided Google Form link.
 4. As a visitor, I can click Email and open Gmail compose with a placeholder email prefilled.
 5. As a visitor, I can navigate using Services and About Me tabs.
 6. As a visitor, I can expand dropdowns for garbage cans, fences, driveways, wooden decks, and custom inquiries, each with relevant imagery.
@@ -52,3 +52,5 @@ User stories:
 - Update complete: all service dropdowns and Why choose us dropdown are now closed by default; Testing Agent confirmed 100% success.
 - Update complete: Call, Book, and Email buttons now display side-by-side in hero, final CTA, and mobile quick CTA bar; Testing Agent confirmed 100% success.
 - Update complete: uploaded C&C Property Care logo integrated in the brand mark location; Testing Agent confirmed 100% success.
+- Update complete: consultation buttons now use the provided Google Form URL https://forms.gle/11TXTAgdrrRsnP749; Testing Agent confirmed 100% success.
+
