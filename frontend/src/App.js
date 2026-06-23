@@ -41,7 +41,6 @@ const serviceItems = [
     alt: "Clean residential garbage cans ready for service",
     copy:
       "First time customers get $10 per garbage can, after its $15 per garbage can.",
-    bullets: ["Odor-reducing rinse", "Exterior wash down", "Quick curbside service"],
   },
   {
     value: "fences",
@@ -52,7 +51,6 @@ const serviceItems = [
     alt: "Fresh clean wooden fence beside a green lawn",
     copy:
       "Bring back curb appeal by lifting dirt, algae, and weather stains from fence panels.",
-    bullets: ["Wood and vinyl care", "Gentle surface approach", "Cleaner property lines"],
   },
   {
     value: "driveways",
@@ -63,7 +61,6 @@ const serviceItems = [
     alt: "Clean concrete driveway pavers after exterior cleaning",
     copy:
       "Refresh concrete, pavers, and walkways so the first thing people see looks cared for.",
-    bullets: ["Concrete and pavers", "Walkways and aprons", "Noticeable brightening"],
   },
   {
     value: "wooden-decks",
@@ -74,7 +71,6 @@ const serviceItems = [
     alt: "Clean backyard wooden deck connected to a home",
     copy:
       "Make outdoor spaces feel ready for family, friends, and summer weekends again.",
-    bullets: ["Deck boards and railings", "Patio-adjacent surfaces", "Careful wood treatment"],
   },
   {
     value: "custom-inquiries",
@@ -85,7 +81,6 @@ const serviceItems = [
     alt: "Long Island style home exterior and driveway",
     copy:
       "Have something else around the property that needs attention? Reach out and we will take a look.",
-    bullets: ["One-off projects", "Seasonal cleanups", "Flexible local scheduling"],
   },
 ];
 
@@ -312,14 +307,6 @@ function ServicesSection() {
                     >
                       {service.copy}
                     </p>
-                    <ul className="service-bullets">
-                      {service.bullets.map((bullet) => (
-                        <li key={bullet}>
-                          <CheckCircle2 className="h-4 w-4" />
-                          {bullet}
-                        </li>
-                      ))}
-                    </ul>
                   </div>
                   <AspectRatio ratio={16 / 10} className="service-image-wrap">
                     <img src={service.image} alt={service.alt} />

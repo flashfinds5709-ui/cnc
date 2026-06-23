@@ -53,4 +53,6 @@ User stories:
 - Update complete: Call, Book, and Email buttons now display side-by-side in hero, final CTA, and mobile quick CTA bar; Testing Agent confirmed 100% success.
 - Update complete: uploaded C&C Property Care logo integrated in the brand mark location; Testing Agent confirmed 100% success.
 - Update complete: consultation buttons now use the provided Google Form URL https://forms.gle/11TXTAgdrrRsnP749; Testing Agent confirmed 100% success.
+- Update complete: green checkmark bullet rows/text removed from all service dropdowns; Testing Agent confirmed 100% success and unused bullet data/styles were cleaned up.
+
 
