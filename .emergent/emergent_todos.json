@@ -1,10 +1,18 @@
 [
   {
-    "content": "Move footer phone number under the email address",
+    "content": "Snapshot the current React/static version without changing it",
     "status": "completed"
   },
   {
-    "content": "Validate footer contact layout update",
+    "content": "Create a simple GitHub Pages static site folder with index.html, css, js, and local assets",
+    "status": "completed"
+  },
+  {
+    "content": "Validate the simple static site locally and with Testing Agent",
+    "status": "in_progress"
+  },
+  {
+    "content": "Document the new file structure and publish instructions",
     "status": "completed"
   }
 ]

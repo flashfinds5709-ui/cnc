@@ -1,0 +1,426 @@
+import "@/App.css";
+import {
+  ArrowRight,
+  CheckCircle2,
+  Droplets,
+  MapPin,
+  Sparkles,
+} from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+
+const LOGO_URL = `${process.env.PUBLIC_URL}/assets/logo.png`;
+
+const PHONE_DISPLAY = "(631) 401-7026";
+const CONSULTATION_LINK = "https://forms.gle/11TXTAgdrrRsnP749";
+const CONTACT_EMAIL = "propertycare.cnc@gmail.com";
+
+const heroImage = `${process.env.PUBLIC_URL}/assets/hero-pressure-washing.jpg`;
+
+const serviceItems = [
+  {
+    value: "garbage-cans",
+    title: "Garbage cans",
+    testId: "service-garbage-cans-accordion",
+    image:
+      `${process.env.PUBLIC_URL}/assets/service-garbage-cans.jpg`,
+    alt: "Clean residential garbage cans ready for service",
+    copy:
+      "First time customers get $10 per garbage can, after its $15 per garbage can.",
+  },
+  {
+    value: "fences",
+    title: "Fences",
+    testId: "service-fences-accordion",
+    image:
+      `${process.env.PUBLIC_URL}/assets/service-fences.jpg`,
+    alt: "Fresh clean wooden fence beside a green lawn",
+    copy:
+      "Bring back curb appeal by lifting dirt, algae, and weather stains from fence panels.",
+  },
+  {
+    value: "driveways",
+    title: "Driveways",
+    testId: "service-driveways-accordion",
+    image:
+      `${process.env.PUBLIC_URL}/assets/service-driveways.jpg`,
+    alt: "Clean concrete driveway pavers after exterior cleaning",
+    copy:
+      "Refresh concrete, pavers, and walkways so the first thing people see looks cared for.",
+  },
+  {
+    value: "wooden-decks",
+    title: "Wooden decks",
+    testId: "service-wooden-decks-accordion",
+    image:
+      `${process.env.PUBLIC_URL}/assets/service-wooden-decks.jpg`,
+    alt: "Clean backyard wooden deck connected to a home",
+    copy:
+      "Make outdoor spaces feel ready for family, friends, and summer weekends again.",
+  },
+  {
+    value: "custom-inquiries",
+    title: "Custom inquiries",
+    testId: "service-custom-inquiries-accordion",
+    image:
+      `${process.env.PUBLIC_URL}/assets/service-custom.jpg`,
+    alt: "Long Island style home exterior and driveway",
+    copy:
+      "Have something else around the property that needs attention? Reach out and we will take a look.",
+  },
+];
+
+const proofCards = [
+  {
+    label: "Before",
+    title: "Weathered surfaces",
+    image:
+      `${process.env.PUBLIC_URL}/assets/proof-walkway-before.jpg`,
+    alt: "Outdoor walkway before detailed exterior cleaning",
+  },
+  {
+    label: "After",
+    title: "Clean first impression",
+    image:
+      `${process.env.PUBLIC_URL}/assets/proof-house-after.jpg`,
+    alt: "Clean home exterior and lawn after property care",
+  },
+  {
+    label: "Before",
+    title: "Dull patio pavers",
+    image:
+      `${process.env.PUBLIC_URL}/assets/service-driveways.jpg`,
+    alt: "Concrete pavers needing a refresh",
+  },
+  {
+    label: "After",
+    title: "Bright outdoor space",
+    image:
+      `${process.env.PUBLIC_URL}/assets/proof-patio-after.jpg`,
+    alt: "Bright clean backyard patio and pool area",
+  },
+];
+
+const trustItems = ["Free estimates", "Local Long Island", "Fast scheduling"];
+
+const serviceKeywords = [
+  "Pressure Washing",
+  "Power Washing",
+  "Pressure Washing Services",
+  "Power Washing Services",
+  "Pressure Washing Near Me",
+  "Power Washing Near Me",
+  "Pressure Washing Company",
+  "Professional Pressure Washing",
+  "Exterior Cleaning Services",
+  "Residential Pressure Washing",
+  "Commercial Pressure Washing",
+  "Soft Washing",
+];
+
+function CtaButtons({ location = "hero" }) {
+  return (
+    <div className="cta-row book-only">
+      <Button asChild className="btn-green" size="lg">
+        <a
+          data-testid={`${location}-book-consultation-button`}
+          href={CONSULTATION_LINK}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span className="cta-full">Book a Consultation</span>
+          <span className="cta-short">Book</span>
+          <ArrowRight className="h-4 w-4" />
+        </a>
+      </Button>
+    </div>
+  );
+}
+
+function Header() {
+  return (
+    <header className="site-header">
+      <nav className="nav-shell" aria-label="Main navigation">
+        <a className="brand" href="#top" data-testid="brand-home-link">
+          <span className="brand-mark" aria-hidden="true">
+            <img src={LOGO_URL} alt="" />
+          </span>
+          <span>
+            <strong>C&C Property Care</strong>
+            <small>Long Island, NY</small>
+          </span>
+        </a>
+        <div className="nav-links" aria-label="Page sections">
+          <a data-testid="nav-services-link" href="#services">
+            Services
+          </a>
+          <a data-testid="nav-about-link" href="#about">
+            About Me
+          </a>
+        </div>
+        <div className="header-actions">
+          <Button asChild className="header-book-btn">
+            <a
+              data-testid="header-book-consultation-button"
+              href={CONSULTATION_LINK}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Book
+            </a>
+          </Button>
+        </div>
+      </nav>
+    </header>
+  );
+}
+
+function Hero() {
+  return (
+    <section id="top" className="hero-section">
+      <div className="container hero-grid">
+        <div className="hero-copy">
+          <Badge className="local-badge" data-testid="service-area-notice">
+            <MapPin className="h-3.5 w-3.5" /> Operated only on Long Island, New York
+          </Badge>
+          <h1>Power washing that makes Long Island properties look clean again.</h1>
+          <p className="hero-subtitle">
+            Fences, driveways, garbage cans, wooden decks, and custom exterior cleaning handled by Carlo and Collin from Holtsville.
+          </p>
+          <CtaButtons location="hero" />
+          <div className="contact-line" data-testid="static-contact-info">
+            <span>{PHONE_DISPLAY}</span>
+            <span>{CONTACT_EMAIL}</span>
+          </div>
+          <div className="trust-strip" aria-label="Service highlights">
+            {trustItems.map((item) => (
+              <span key={item}>
+                <CheckCircle2 className="h-4 w-4" /> {item}
+              </span>
+            ))}
+          </div>
+        </div>
+        <Card className="hero-card">
+          <CardContent className="hero-card-content">
+            <AspectRatio ratio={4 / 3}>
+              <img src={heroImage} alt="Worker power washing an exterior surface" />
+            </AspectRatio>
+            <div className="image-note">
+              <Droplets className="h-4 w-4" />
+              Fast curb appeal refreshes
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+  );
+}
+
+function KeywordStrip() {
+  return (
+    <section className="keyword-strip" aria-label="Pressure washing service keywords">
+      <div className="container keyword-shell" data-testid="service-keywords-section">
+        <span className="keyword-label">Popular services</span>
+        <div className="keyword-list">
+          {serviceKeywords.map((keyword) => (
+            <span key={keyword} className="keyword-chip">
+              {keyword}
+            </span>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ProofSection() {
+  return (
+    <section className="section proof-section" aria-labelledby="proof-heading">
+      <div className="container">
+        <div className="section-heading compact-heading">
+          <span className="eyebrow">Before & after style proof</span>
+          <h2 id="proof-heading">Simple, visible property cleanups.</h2>
+          <p>
+            Real project photos can be added later. For now, these stock images show the kind of fresh, clean finish C&C is built around.
+          </p>
+        </div>
+        <div className="proof-grid" data-testid="before-after-gallery">
+          {proofCards.map((card, index) => (
+            <Card className="photo-card" key={`${card.label}-${card.title}`}>
+              <CardContent className="photo-card-content">
+                <AspectRatio ratio={4 / 3}>
+                  <img src={card.image} alt={card.alt} />
+                </AspectRatio>
+                <div className="photo-caption">
+                  <span className={card.label === "After" ? "after-chip" : "before-chip"}>
+                    {card.label}
+                  </span>
+                  <strong>{card.title}</strong>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ServicesSection() {
+  return (
+    <section id="services" className="section services-section" aria-labelledby="services-heading">
+      <div className="container two-column">
+        <div className="section-heading sticky-heading">
+          <span className="eyebrow">Services</span>
+          <h2 id="services-heading">Pick what needs cleaning.</h2>
+          <p>
+            Expand a service to see what C&C Property Care can help with. Every visit is focused on simple scheduling, careful work, and clean results.
+          </p>
+          <div className="notice-box" data-testid="water-supply-notice">
+            <strong>*Customer must provide access to water supply if required.</strong>
+          </div>
+        </div>
+        <Accordion type="single" collapsible className="service-accordion">
+          {serviceItems.map((service) => (
+              <AccordionItem
+                value={service.value}
+                key={service.value}
+                className={`service-item service-${service.value}`}
+              >
+              <AccordionTrigger className="service-trigger" data-testid={service.testId}>
+                <span>{service.title}</span>
+              </AccordionTrigger>
+              <AccordionContent className="service-content">
+                <div className="service-detail-grid">
+                  <div>
+                    <p
+                      className="service-copy"
+                      data-testid={
+                        service.value === "garbage-cans" ? "garbage-cans-pricing-text" : undefined
+                      }
+                    >
+                      {service.copy}
+                    </p>
+                  </div>
+                  <AspectRatio ratio={16 / 10} className="service-image-wrap">
+                    <img src={service.image} alt={service.alt} />
+                  </AspectRatio>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </div>
+    </section>
+  );
+}
+
+function AboutSection() {
+  return (
+    <section id="about" className="section about-section" aria-labelledby="about-heading">
+      <div className="container about-grid">
+        <div className="about-card">
+          <span className="eyebrow">About Me</span>
+          <h2 id="about-heading">Local cousins ready to earn your business.</h2>
+          <p data-testid="about-me-text">
+            Carlo and Collin, cousins from Holtsville, wanting to make your property as clean as theirs.
+          </p>
+          <div className="about-mini-grid">
+            <span>
+              <MapPin className="h-4 w-4" /> Long Island only
+            </span>
+            <span>
+              <Sparkles className="h-4 w-4" /> Clean, simple service
+            </span>
+          </div>
+        </div>
+        <Card className="why-card">
+          <CardContent className="why-card-content">
+            <div className="why-static" data-testid="why-choose-us-section">
+              <h3>Why choose us?</h3>
+              <p>
+                Young and ready to earn your business however necessary. We&apos;ve helped maintain our parents property since we were young, and are ready to put the same effort into your property as if it were our own.
+              </p>
+            </div>
+            <div className="why-image-row">
+              <img
+                src={`${process.env.PUBLIC_URL}/assets/about-house.jpg`}
+                alt="Clean house exterior after property cleaning"
+              />
+              <img
+                src={`${process.env.PUBLIC_URL}/assets/service-custom.jpg`}
+                alt="Well maintained home and driveway on a sunny day"
+              />
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+  );
+}
+
+function FinalCta() {
+  return (
+    <section className="final-cta" aria-labelledby="final-cta-heading">
+      <div className="container final-cta-shell">
+        <div>
+          <span className="eyebrow">Ready when you are</span>
+          <h2 id="final-cta-heading">Get your property cleaned without overcomplicating it.</h2>
+          <p>Book a consultation through our Google Form, or reach us directly at {PHONE_DISPLAY} and {CONTACT_EMAIL}.</p>
+        </div>
+        <CtaButtons location="footer" />
+      </div>
+    </section>
+  );
+}
+
+function MobileCtaBar() {
+  return (
+    <div className="mobile-cta-bar" aria-label="Quick booking button">
+      <a
+        data-testid="mobile-book-consultation-button"
+        href={CONSULTATION_LINK}
+        target="_blank"
+        rel="noreferrer"
+      >
+        Book a Consultation
+      </a>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div className="App">
+      <Header />
+      <main>
+        <Hero />
+        <KeywordStrip />
+        <ProofSection />
+        <ServicesSection />
+        <AboutSection />
+        <FinalCta />
+      </main>
+      <footer className="site-footer">
+        <div className="container footer-inner">
+          <p>© 2026 C&C Property Care. Serving Long Island, New York.</p>
+          <div className="footer-contact" data-testid="footer-contact-info">
+            <span>{CONTACT_EMAIL}</span>
+            <span>{PHONE_DISPLAY}</span>
+          </div>
+        </div>
+      </footer>
+      <MobileCtaBar />
+    </div>
+  );
+}
+
+export default App;
