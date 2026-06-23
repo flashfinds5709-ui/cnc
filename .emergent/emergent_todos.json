@@ -1,26 +1,14 @@
 [
   {
-    "content": "Make frontend build portable/static for GitHub hosting",
+    "content": "Remove call and email buttons while keeping Google Form book buttons",
     "status": "completed"
   },
   {
-    "content": "Remove Emergent-only runtime badge/scripts from static HTML",
+    "content": "Add static phone number and email text to the site",
     "status": "completed"
   },
   {
-    "content": "Localize remote logo/photos into public assets for GitHub static hosting",
-    "status": "completed"
-  },
-  {
-    "content": "Remove Emergent visual-edits dev dependency/config from frontend project",
-    "status": "completed"
-  },
-  {
-    "content": "Fix syntax issue introduced during static conversion",
-    "status": "completed"
-  },
-  {
-    "content": "Validate static build output and document GitHub hosting steps",
-    "status": "completed"
+    "content": "Validate static CTA/contact update with build and testing",
+    "status": "in_progress"
   }
 ]

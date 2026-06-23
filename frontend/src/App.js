@@ -3,9 +3,7 @@ import {
   ArrowRight,
   CheckCircle2,
   Droplets,
-  Mail,
   MapPin,
-  Phone,
   Sparkles,
 } from "lucide-react";
 import {
@@ -22,10 +20,8 @@ import { Card, CardContent } from "@/components/ui/card";
 const LOGO_URL = `${process.env.PUBLIC_URL}/assets/logo.png`;
 
 const PHONE_DISPLAY = "(631) 401-7026";
-const PHONE_LINK = "tel:6314017026";
 const CONSULTATION_LINK = "https://forms.gle/11TXTAgdrrRsnP749";
-const PLACEHOLDER_EMAIL = "propertycare.cnc@gmail.com";
-const GMAIL_LINK = `https://mail.google.com/mail/?view=cm&fs=1&to=${PLACEHOLDER_EMAIL}&su=C%26C%20Property%20Care%20Consultation&body=Hi%20Carlo%20%26%20Collin%2C%0A%0AI%27d%20like%20a%20quote%20for%20power%20washing%20on%20Long%20Island.%0A%0AService%20needed%3A%20%0AAddress%3A%20%0APreferred%20date%2Ftime%3A%20%0A%0AThanks%21`;
+const CONTACT_EMAIL = "propertycare.cnc@gmail.com";
 
 const heroImage = `${process.env.PUBLIC_URL}/assets/hero-pressure-washing.jpg`;
 
@@ -130,20 +126,9 @@ const serviceKeywords = [
   "Soft Washing",
 ];
 
-function CtaButtons({ compact = false, location = "hero" }) {
+function CtaButtons({ location = "hero" }) {
   return (
-    <div className={compact ? "cta-row compact" : "cta-row"}>
-      <Button asChild className="btn-primary" size="lg">
-        <a
-          data-testid={`${location}-call-button`}
-          href={PHONE_LINK}
-          aria-label={`Call C&C Property Care at ${PHONE_DISPLAY}`}
-        >
-          <Phone className="h-4 w-4" />
-          <span className="cta-full">Call {PHONE_DISPLAY}</span>
-          <span className="cta-short">Call</span>
-        </a>
-      </Button>
+    <div className="cta-row book-only">
       <Button asChild className="btn-green" size="lg">
         <a
           data-testid={`${location}-book-consultation-button`}
@@ -156,21 +141,6 @@ function CtaButtons({ compact = false, location = "hero" }) {
           <ArrowRight className="h-4 w-4" />
         </a>
       </Button>
-      {!compact && (
-        <Button asChild className="btn-outline" variant="outline" size="lg">
-          <a
-            data-testid={`${location}-email-button`}
-            href={GMAIL_LINK}
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Open Gmail to email C&C Property Care"
-          >
-            <Mail className="h-4 w-4" />
-            <span className="cta-full">Email Us</span>
-            <span className="cta-short">Email</span>
-          </a>
-        </Button>
-      )}
     </div>
   );
 }
@@ -197,12 +167,6 @@ function Header() {
           </a>
         </div>
         <div className="header-actions">
-          <Button asChild className="header-call-btn">
-            <a data-testid="header-call-button" href={PHONE_LINK}>
-              <Phone className="h-4 w-4" />
-              {PHONE_DISPLAY}
-            </a>
-          </Button>
           <Button asChild className="header-book-btn">
             <a
               data-testid="header-book-consultation-button"
@@ -232,6 +196,10 @@ function Hero() {
             Fences, driveways, garbage cans, wooden decks, and custom exterior cleaning handled by Carlo and Collin from Holtsville.
           </p>
           <CtaButtons location="hero" />
+          <div className="contact-line" data-testid="static-contact-info">
+            <span>{PHONE_DISPLAY}</span>
+            <span>{CONTACT_EMAIL}</span>
+          </div>
           <div className="trust-strip" aria-label="Service highlights">
             {trustItems.map((item) => (
               <span key={item}>
@@ -406,7 +374,7 @@ function FinalCta() {
         <div>
           <span className="eyebrow">Ready when you are</span>
           <h2 id="final-cta-heading">Get your property cleaned without overcomplicating it.</h2>
-          <p>Call now, book the placeholder consultation form, or open Gmail to start a quick quote request.</p>
+          <p>Book a consultation through our Google Form, or reach us directly at {PHONE_DISPLAY} and {CONTACT_EMAIL}.</p>
         </div>
         <CtaButtons location="footer" />
       </div>
@@ -416,25 +384,14 @@ function FinalCta() {
 
 function MobileCtaBar() {
   return (
-    <div className="mobile-cta-bar" aria-label="Quick contact buttons">
-      <a data-testid="mobile-call-button" href={PHONE_LINK}>
-        <Phone className="h-4 w-4" /> Call
-      </a>
+    <div className="mobile-cta-bar" aria-label="Quick booking button">
       <a
         data-testid="mobile-book-consultation-button"
         href={CONSULTATION_LINK}
         target="_blank"
         rel="noreferrer"
       >
-        Book
-      </a>
-      <a
-        data-testid="mobile-email-button"
-        href={GMAIL_LINK}
-        target="_blank"
-        rel="noreferrer"
-      >
-        <Mail className="h-4 w-4" /> Email
+        Book a Consultation
       </a>
     </div>
   );
@@ -455,9 +412,10 @@ function App() {
       <footer className="site-footer">
         <div className="container footer-inner">
           <p>© 2026 C&C Property Care. Serving Long Island, New York.</p>
-          <a data-testid="footer-email-link" href={GMAIL_LINK} target="_blank" rel="noreferrer">
-            {PLACEHOLDER_EMAIL}
-          </a>
+          <div className="footer-contact" data-testid="footer-contact-info">
+            <span>{PHONE_DISPLAY}</span>
+            <span>{CONTACT_EMAIL}</span>
+          </div>
         </div>
       </footer>
       <MobileCtaBar />
