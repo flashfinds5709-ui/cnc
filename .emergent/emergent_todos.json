@@ -1,10 +1,26 @@
 [
   {
-    "content": "Add requested pressure/power washing keywords to page content and SEO metadata",
+    "content": "Make frontend build portable/static for GitHub hosting",
     "status": "completed"
   },
   {
-    "content": "Validate keyword update with lint/build and frontend testing",
+    "content": "Remove Emergent-only runtime badge/scripts from static HTML",
     "status": "completed"
+  },
+  {
+    "content": "Localize remote logo/photos into public assets for GitHub static hosting",
+    "status": "completed"
+  },
+  {
+    "content": "Remove Emergent visual-edits dev dependency/config from frontend project",
+    "status": "completed"
+  },
+  {
+    "content": "Fix syntax issue introduced during static conversion",
+    "status": "completed"
+  },
+  {
+    "content": "Validate static build output and document GitHub hosting steps",
+    "status": "in_progress"
   }
 ]

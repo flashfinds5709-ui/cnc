@@ -19,8 +19,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
-const LOGO_URL =
-  "https://customer-assets.emergentagent.com/job_cc-property-clean/artifacts/utyc0ag3_dd8e7278b9ac6826b0e473f36cf59955860af15dafc9b631ac8baecbcf2014b4.png";
+const LOGO_URL = `${process.env.PUBLIC_URL}/assets/logo.png`;
 
 const PHONE_DISPLAY = "(631) 401-7026";
 const PHONE_LINK = "tel:6314017026";
@@ -28,8 +27,7 @@ const CONSULTATION_LINK = "https://forms.gle/11TXTAgdrrRsnP749";
 const PLACEHOLDER_EMAIL = "propertycare.cnc@gmail.com";
 const GMAIL_LINK = `https://mail.google.com/mail/?view=cm&fs=1&to=${PLACEHOLDER_EMAIL}&su=C%26C%20Property%20Care%20Consultation&body=Hi%20Carlo%20%26%20Collin%2C%0A%0AI%27d%20like%20a%20quote%20for%20power%20washing%20on%20Long%20Island.%0A%0AService%20needed%3A%20%0AAddress%3A%20%0APreferred%20date%2Ftime%3A%20%0A%0AThanks%21`;
 
-const heroImage =
-  "https://images.pexels.com/photos/30958770/pexels-photo-30958770.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200";
+const heroImage = `${process.env.PUBLIC_URL}/assets/hero-pressure-washing.jpg`;
 
 const serviceItems = [
   {
@@ -37,7 +35,7 @@ const serviceItems = [
     title: "Garbage cans",
     testId: "service-garbage-cans-accordion",
     image:
-      "https://images.unsplash.com/photo-1605600659908-0ef719419d41?auto=format&fit=crop&w=1100&q=85",
+      `${process.env.PUBLIC_URL}/assets/service-garbage-cans.jpg`,
     alt: "Clean residential garbage cans ready for service",
     copy:
       "First time customers get $10 per garbage can, after its $15 per garbage can.",
@@ -47,7 +45,7 @@ const serviceItems = [
     title: "Fences",
     testId: "service-fences-accordion",
     image:
-      "https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1100&q=85",
+      `${process.env.PUBLIC_URL}/assets/service-fences.jpg`,
     alt: "Fresh clean wooden fence beside a green lawn",
     copy:
       "Bring back curb appeal by lifting dirt, algae, and weather stains from fence panels.",
@@ -57,7 +55,7 @@ const serviceItems = [
     title: "Driveways",
     testId: "service-driveways-accordion",
     image:
-      "https://images.pexels.com/photos/14115533/pexels-photo-14115533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=800&w=1200",
+      `${process.env.PUBLIC_URL}/assets/service-driveways.jpg`,
     alt: "Clean concrete driveway pavers after exterior cleaning",
     copy:
       "Refresh concrete, pavers, and walkways so the first thing people see looks cared for.",
@@ -67,7 +65,7 @@ const serviceItems = [
     title: "Wooden decks",
     testId: "service-wooden-decks-accordion",
     image:
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1100&q=85",
+      `${process.env.PUBLIC_URL}/assets/service-wooden-decks.jpg`,
     alt: "Clean backyard wooden deck connected to a home",
     copy:
       "Make outdoor spaces feel ready for family, friends, and summer weekends again.",
@@ -77,7 +75,7 @@ const serviceItems = [
     title: "Custom inquiries",
     testId: "service-custom-inquiries-accordion",
     image:
-      "https://images.pexels.com/photos/7587470/pexels-photo-7587470.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=800&w=1200",
+      `${process.env.PUBLIC_URL}/assets/service-custom.jpg`,
     alt: "Long Island style home exterior and driveway",
     copy:
       "Have something else around the property that needs attention? Reach out and we will take a look.",
@@ -89,28 +87,28 @@ const proofCards = [
     label: "Before",
     title: "Weathered surfaces",
     image:
-      "https://images.unsplash.com/photo-1636616409963-a3db0a1fc594?auto=format&fit=crop&w=1100&q=85",
+      `${process.env.PUBLIC_URL}/assets/proof-walkway-before.jpg`,
     alt: "Outdoor walkway before detailed exterior cleaning",
   },
   {
     label: "After",
     title: "Clean first impression",
     image:
-      "https://images.pexels.com/photos/7587856/pexels-photo-7587856.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=800&w=1200",
+      `${process.env.PUBLIC_URL}/assets/proof-house-after.jpg`,
     alt: "Clean home exterior and lawn after property care",
   },
   {
     label: "Before",
     title: "Dull patio pavers",
     image:
-      "https://images.pexels.com/photos/14115533/pexels-photo-14115533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=800&w=1200",
+      `${process.env.PUBLIC_URL}/assets/service-driveways.jpg`,
     alt: "Concrete pavers needing a refresh",
   },
   {
     label: "After",
     title: "Bright outdoor space",
     image:
-      "https://images.pexels.com/photos/8143669/pexels-photo-8143669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=800&w=1200",
+      `${process.env.PUBLIC_URL}/assets/proof-patio-after.jpg`,
     alt: "Bright clean backyard patio and pool area",
   },
 ];
@@ -386,11 +384,11 @@ function AboutSection() {
             </div>
             <div className="why-image-row">
               <img
-                src="https://images.unsplash.com/photo-1555636222-cae831e670b3?auto=format&fit=crop&w=800&q=85"
+                src={`${process.env.PUBLIC_URL}/assets/about-house.jpg`}
                 alt="Clean house exterior after property cleaning"
               />
               <img
-                src="https://images.pexels.com/photos/7587470/pexels-photo-7587470.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                src={`${process.env.PUBLIC_URL}/assets/service-custom.jpg`}
                 alt="Well maintained home and driveway on a sunny day"
               />
             </div>
