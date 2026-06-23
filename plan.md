@@ -32,7 +32,7 @@ User stories:
 5. As a visitor, I can navigate using Services and About Me tabs.
 6. As a visitor, I can expand dropdowns for garbage cans, fences, driveways, wooden decks, and custom inquiries, each with relevant imagery.
 7. As a visitor, I can see before/after style images and a clean simple layout.
-8. As a visitor, I can read the About Me section and Why choose us dropdown.
+8. As a visitor, I can read the About Me section and always-visible Why choose us content.
 9. As a visitor, I can see the Long Island only operating area and bold asterisk water supply notice.
 10. As a visitor, all dropdowns are closed until I click on them.
 11. As a visitor, Call, Book, and Email CTA buttons appear next to each other on desktop and mobile.
@@ -54,5 +54,7 @@ User stories:
 - Update complete: uploaded C&C Property Care logo integrated in the brand mark location; Testing Agent confirmed 100% success.
 - Update complete: consultation buttons now use the provided Google Form URL https://forms.gle/11TXTAgdrrRsnP749; Testing Agent confirmed 100% success.
 - Update complete: green checkmark bullet rows/text removed from all service dropdowns; Testing Agent confirmed 100% success and unused bullet data/styles were cleaned up.
+- Update complete: Why choose us is now static always-visible content instead of a dropdown; Testing Agent confirmed 100% success.
+
 
 
