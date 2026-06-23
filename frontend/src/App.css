@@ -603,7 +603,7 @@ img {
 }
 
 .final-cta-shell > div:first-child {
-  max-width: 620px;
+  max-width: 440px;
 }
 
 .site-footer {
@@ -631,6 +631,18 @@ img {
 
 .mobile-cta-bar {
   display: none;
+}
+
+.final-cta-shell .cta-row {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  flex: 0 0 auto;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.final-cta-shell .cta-row a {
+  white-space: nowrap;
 }
 
 @media (max-width: 980px) {

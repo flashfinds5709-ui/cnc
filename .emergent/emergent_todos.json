@@ -4,7 +4,11 @@
     "status": "completed"
   },
   {
-    "content": "Validate CTA layout with lint/build and testing agent",
+    "content": "Fix final CTA desktop button wrapping reported by testing agent",
+    "status": "completed"
+  },
+  {
+    "content": "Re-validate CTA layout with lint/build and testing agent",
     "status": "in_progress"
   }
 ]
