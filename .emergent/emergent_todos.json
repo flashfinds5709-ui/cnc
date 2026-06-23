@@ -1,10 +1,10 @@
 [
   {
-    "content": "Rename company from C&C Property Cleaning to C&C Property Care across visible page and docs",
+    "content": "Place call, book, and email CTA buttons next to each other",
     "status": "completed"
   },
   {
-    "content": "Validate rename with lint/build",
-    "status": "completed"
+    "content": "Validate CTA layout with lint/build and testing agent",
+    "status": "in_progress"
   }
 ]

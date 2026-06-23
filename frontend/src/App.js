@@ -129,7 +129,8 @@ function CtaButtons({ compact = false, location = "hero" }) {
           aria-label={`Call C&C Property Care at ${PHONE_DISPLAY}`}
         >
           <Phone className="h-4 w-4" />
-          Call {PHONE_DISPLAY}
+          <span className="cta-full">Call {PHONE_DISPLAY}</span>
+          <span className="cta-short">Call</span>
         </a>
       </Button>
       <Button asChild className="btn-green" size="lg">
@@ -139,7 +140,8 @@ function CtaButtons({ compact = false, location = "hero" }) {
           target="_blank"
           rel="noreferrer"
         >
-          Book a Consultation
+          <span className="cta-full">Book a Consultation</span>
+          <span className="cta-short">Book</span>
           <ArrowRight className="h-4 w-4" />
         </a>
       </Button>
@@ -153,7 +155,8 @@ function CtaButtons({ compact = false, location = "hero" }) {
             aria-label="Open Gmail to email C&C Property Care"
           >
             <Mail className="h-4 w-4" />
-            Email Us
+            <span className="cta-full">Email Us</span>
+            <span className="cta-short">Email</span>
           </a>
         </Button>
       )}
@@ -406,6 +409,14 @@ function MobileCtaBar() {
         rel="noreferrer"
       >
         Book
+      </a>
+      <a
+        data-testid="mobile-email-button"
+        href={GMAIL_LINK}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <Mail className="h-4 w-4" /> Email
       </a>
     </div>
   );
