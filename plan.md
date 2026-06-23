@@ -11,12 +11,14 @@ Build a one-page landing page for C&C Property Care, a Long Island New York powe
 - Why choose us dropdown text: young and ready to earn your business however necessary. we've helped maintain our parents property since we were young, and are ready to put the same effort into your property as if it were our own
 - Service area: only Long Island, New York
 - Notice: **Customer must provide access to water supply if required
+- Uploaded C&C Property Care logo should be used wherever the brand mark appears.
 
 ## User Choices / Clarifications
 - Google Form: use placeholder link for now
 - Email: use placeholder email for now
 - Photos: use high-quality stock power-washing photos
 - Tone: simple and not too bulky
+- Logo: use uploaded logo wherever the current brand mark appears
 
 ## Phase 1: Core POC
 Skipped. This is a static one-page marketing site with placeholder outbound links and no external API integration requiring isolated validation.
@@ -34,10 +36,11 @@ User stories:
 9. As a visitor, I can see the Long Island only operating area and bold asterisk water supply notice.
 10. As a visitor, all dropdowns are closed until I click on them.
 11. As a visitor, Call, Book, and Email CTA buttons appear next to each other on desktop and mobile.
+12. As a visitor, I can see the uploaded C&C Property Care logo in the brand mark location.
 
 ## Testing Plan
 - Lint/build frontend.
-- Testing Agent should verify nav tabs, CTAs, dropdowns, required text, images, responsive visible layout, and no console/runtime errors.
+- Testing Agent should verify nav tabs, CTAs, dropdowns, required text, images, responsive visible layout, logo display, and no console/runtime errors.
 
 ## Current Status
 - Phase 1: Skipped intentionally; no complex core integration.
@@ -48,3 +51,4 @@ User stories:
 - Testing Agent completed end-to-end validation with 100% frontend success and no open issues.
 - Update complete: all service dropdowns and Why choose us dropdown are now closed by default; Testing Agent confirmed 100% success.
 - Update complete: Call, Book, and Email buttons now display side-by-side in hero, final CTA, and mobile quick CTA bar; Testing Agent confirmed 100% success.
+- Update complete: uploaded C&C Property Care logo integrated in the brand mark location; Testing Agent confirmed 100% success.
