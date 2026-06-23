@@ -1,14 +1,10 @@
 [
   {
-    "content": "Remove call and email buttons while keeping Google Form book buttons",
+    "content": "Move footer phone number under the email address",
     "status": "completed"
   },
   {
-    "content": "Add static phone number and email text to the site",
-    "status": "completed"
-  },
-  {
-    "content": "Validate static CTA/contact update with build and testing",
-    "status": "completed"
+    "content": "Validate footer contact layout update",
+    "status": "in_progress"
   }
 ]

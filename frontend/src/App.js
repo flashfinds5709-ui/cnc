@@ -413,8 +413,8 @@ function App() {
         <div className="container footer-inner">
           <p>© 2026 C&C Property Care. Serving Long Island, New York.</p>
           <div className="footer-contact" data-testid="footer-contact-info">
-            <span>{PHONE_DISPLAY}</span>
             <span>{CONTACT_EMAIL}</span>
+            <span>{PHONE_DISPLAY}</span>
           </div>
         </div>
       </footer>

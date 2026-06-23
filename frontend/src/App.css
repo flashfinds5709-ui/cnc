@@ -727,15 +727,16 @@ img {
 
 .footer-contact {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 14px;
-  color: #7dd3fc;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 6px;
+  color: #86efac;
   font-weight: 800;
 }
 
 .footer-contact span:last-child {
-  color: #86efac;
+  color: #7dd3fc;
 }
 
 .mobile-cta-bar {
