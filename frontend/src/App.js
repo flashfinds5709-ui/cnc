@@ -117,6 +117,21 @@ const proofCards = [
 
 const trustItems = ["Free estimates", "Local Long Island", "Fast scheduling"];
 
+const serviceKeywords = [
+  "Pressure Washing",
+  "Power Washing",
+  "Pressure Washing Services",
+  "Power Washing Services",
+  "Pressure Washing Near Me",
+  "Power Washing Near Me",
+  "Pressure Washing Company",
+  "Professional Pressure Washing",
+  "Exterior Cleaning Services",
+  "Residential Pressure Washing",
+  "Commercial Pressure Washing",
+  "Soft Washing",
+];
+
 function CtaButtons({ compact = false, location = "hero" }) {
   return (
     <div className={compact ? "cta-row compact" : "cta-row"}>
@@ -238,6 +253,23 @@ function Hero() {
             </div>
           </CardContent>
         </Card>
+      </div>
+    </section>
+  );
+}
+
+function KeywordStrip() {
+  return (
+    <section className="keyword-strip" aria-label="Pressure washing service keywords">
+      <div className="container keyword-shell" data-testid="service-keywords-section">
+        <span className="keyword-label">Popular services</span>
+        <div className="keyword-list">
+          {serviceKeywords.map((keyword) => (
+            <span key={keyword} className="keyword-chip">
+              {keyword}
+            </span>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -416,6 +448,7 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <KeywordStrip />
         <ProofSection />
         <ServicesSection />
         <AboutSection />

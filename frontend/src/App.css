@@ -343,6 +343,52 @@ img {
   background: linear-gradient(180deg, #ecfdf5 0%, #f0f9ff 100%);
 }
 
+.keyword-strip {
+  padding: 24px 0;
+  background: linear-gradient(90deg, #e0f2fe, #dcfce7);
+  border-top: 1px solid #7dd3fc;
+  border-bottom: 1px solid #86efac;
+}
+
+.keyword-shell {
+  display: grid;
+  gap: 12px;
+}
+
+.keyword-label {
+  color: #075985;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.keyword-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.keyword-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid #7dd3fc;
+  color: #075985;
+  font-weight: 800;
+  font-size: 0.86rem;
+  box-shadow: 0 8px 20px rgba(14, 165, 233, 0.08);
+}
+
+.keyword-chip:nth-child(even) {
+  border-color: #86efac;
+  color: #166534;
+}
+
+
 .section-heading {
   max-width: 560px;
 }
