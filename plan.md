@@ -60,6 +60,8 @@ User stories:
 
 - Update complete: added richer blue/green color accents across the site while keeping the layout simple; Testing Agent confirmed 100% success.
 - Update complete: added requested pressure/power washing keywords to visible page content and SEO metadata; Testing Agent confirmed 100% success.
+- Update complete: converted frontend to fully static GitHub Pages-ready build with relative asset paths, local images/logo, no backend/API dependency, no Emergent badge/scripts/PostHog, and STATIC_HOSTING.md instructions; Testing Agent confirmed 100% success.
+
 
 
 
