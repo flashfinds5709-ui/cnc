@@ -64,6 +64,8 @@ User stories:
 - Update complete: removed all call/email buttons and tel/mailto/Gmail links, kept Book buttons linked to https://forms.gle/11TXTAgdrrRsnP749, and added phone/email as static text in hero and footer; Testing Agent confirmed 100% success.
 - Update complete: footer contact now shows propertycare.cnc@gmail.com first with (631) 401-7026 directly underneath; Testing Agent confirmed 100% success.
 - Update complete: saved current React/static version at /app/saved_versions/react-static-current and created plain GitHub Pages-ready site at /app/cc-property-care-static with index.html, css/styles.css, js/main.js, assets/, README.md; Testing Agent confirmed 100% structure/SEO/functionality/responsive success.
+- Update complete: moved simple static site CSS/JS to repository root as styles.css and main.js alongside index.html, removed css/js subfolders, and updated README; Testing Agent confirmed 100% frontend/structure/documentation success.
+
 
 
 
