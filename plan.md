@@ -1,7 +1,7 @@
 # C&C Property Care Implementation Plan
 
 ## Problem Statement
-Build a one-page landing page for C&C Property Care, a Long Island New York power washing company. The page should be simple and not bulky, using green, blue, and white. It should include top tabs for Services and About Me, strong instant CTAs, many high-quality stock power-washing photos including before/after style pictures, call button for 631-401-7026, placeholder Google Form consultation button, and placeholder Gmail compose email button.
+Build a one-page landing page for C&C Property Care, a Long Island New York power washing company. The page should be simple and not bulky, using green, blue, and white. It should include top tabs for Services and About Me, strong instant CTAs, many high-quality stock power-washing photos including before/after style pictures, call button for 631-401-7026, real Google Form consultation button, and placeholder Gmail compose email button.
 
 ## Required Content
 - Company name: C&C Property Care

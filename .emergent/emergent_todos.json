@@ -1,10 +1,10 @@
 [
   {
-    "content": "Replace current brand mark with uploaded C&C Property Care logo wherever it appears",
-    "status": "completed"
+    "content": "Replace placeholder consultation Google Form link with provided URL",
+    "status": "in_progress"
   },
   {
-    "content": "Validate logo display with lint/build and frontend test",
-    "status": "completed"
+    "content": "Validate consultation links and build",
+    "status": "pending"
   }
 ]
