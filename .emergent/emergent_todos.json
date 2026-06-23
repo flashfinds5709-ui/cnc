@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Create landing page implementation plan and confirm no POC is needed",
+    "status": "completed"
+  },
+  {
+    "content": "Get simple design guidelines for C&C Property Cleaning landing page",
+    "status": "in_progress"
+  },
+  {
+    "content": "Select high-quality stock power-washing/property-cleaning images",
+    "status": "pending"
+  },
+  {
+    "content": "Implement one-page React landing page with CTAs, dropdowns, images, and responsive styling",
+    "status": "pending"
+  },
+  {
+    "content": "Run lint/build checks and fix any errors",
+    "status": "pending"
+  },
+  {
+    "content": "Phase 2: End-to-end testing using Testing Agent",
+    "status": "pending"
+  }
+]
