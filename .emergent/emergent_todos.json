@@ -1,14 +1,10 @@
 [
   {
-    "content": "Place call, book, and email CTA buttons next to each other",
+    "content": "Replace current brand mark with uploaded C&C Property Care logo wherever it appears",
     "status": "completed"
   },
   {
-    "content": "Fix final CTA desktop button wrapping reported by testing agent",
-    "status": "completed"
-  },
-  {
-    "content": "Re-validate CTA layout with lint/build and testing agent",
-    "status": "completed"
+    "content": "Validate logo display with lint/build and frontend test",
+    "status": "in_progress"
   }
 ]

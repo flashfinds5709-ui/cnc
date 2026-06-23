@@ -19,6 +19,9 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
+const LOGO_URL =
+  "https://customer-assets.emergentagent.com/job_cc-property-clean/artifacts/utyc0ag3_dd8e7278b9ac6826b0e473f36cf59955860af15dafc9b631ac8baecbcf2014b4.png";
+
 const PHONE_DISPLAY = "(631) 401-7026";
 const PHONE_LINK = "tel:6314017026";
 const CONSULTATION_LINK = "https://forms.gle/PLACEHOLDER";
@@ -170,7 +173,7 @@ function Header() {
       <nav className="nav-shell" aria-label="Main navigation">
         <a className="brand" href="#top" data-testid="brand-home-link">
           <span className="brand-mark" aria-hidden="true">
-            C&C
+            <img src={LOGO_URL} alt="" />
           </span>
           <span>
             <strong>C&C Property Care</strong>
