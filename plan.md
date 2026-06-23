@@ -56,5 +56,7 @@ User stories:
 - Update complete: green checkmark bullet rows/text removed from all service dropdowns; Testing Agent confirmed 100% success and unused bullet data/styles were cleaned up.
 - Update complete: Why choose us is now static always-visible content instead of a dropdown; Testing Agent confirmed 100% success.
 
+- Update complete: email CTAs now use propertycare.cnc@gmail.com; Testing Agent confirmed 100% success.
+
 
 
