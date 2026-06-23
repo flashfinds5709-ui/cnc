@@ -62,6 +62,13 @@ let webpackConfig = {
 
 webpackConfig.devServer = (devServerConfig) => {
   // Add health check endpoints if enabled
+  // webpack-dev-server v5 rejects CRA's deprecated middleware hooks.
+  // Remove them here so the preview dev server can start reliably.
+  delete devServerConfig.onAfterSetupMiddleware;
+  delete devServerConfig.onBeforeSetupMiddleware;
+  delete devServerConfig.https;
+
+
   if (config.enableHealthCheck && setupHealthEndpoints && healthPluginInstance) {
     const originalSetupMiddlewares = devServerConfig.setupMiddlewares;
 

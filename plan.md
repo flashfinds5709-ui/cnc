@@ -39,4 +39,4 @@ User stories:
 
 ## Current Status
 - Phase 1: Skipped intentionally; no complex core integration.
-- Phase 2: In progress.
+- Phase 2: Main landing page implemented in React/CSS; lint/build and Testing Agent validation pending.
