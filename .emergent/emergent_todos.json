@@ -1,14 +1,14 @@
 [
   {
-    "content": "Move static CSS and JS files to the GitHub repository root folder",
+    "content": "Convert uploaded HEIC deck after photo into GitHub-friendly JPG asset",
     "status": "completed"
   },
   {
-    "content": "Update index.html and README paths/structure for root-level files",
+    "content": "Replace one After gallery image with uploaded deck photo in static site",
     "status": "completed"
   },
   {
-    "content": "Validate root-level static site with local server and Testing Agent",
-    "status": "completed"
+    "content": "Validate updated static gallery locally and with Testing Agent",
+    "status": "in_progress"
   }
 ]
