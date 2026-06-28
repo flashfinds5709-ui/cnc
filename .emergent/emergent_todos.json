@@ -1,14 +1,14 @@
 [
   {
-    "content": "Fix deck photo visibility by adding it to the live preview React site as well as static folder",
+    "content": "Add the two uploaded deck photos as local assets in both static and preview site folders",
     "status": "completed"
   },
   {
-    "content": "Clean extra uploaded source artifacts from GitHub static assets folder",
+    "content": "Replace two gallery cards with uploaded deck before/after photos",
     "status": "completed"
   },
   {
-    "content": "Validate deck after photo appears in live preview and static site with Testing Agent",
-    "status": "completed"
+    "content": "Validate uploaded two-picture gallery update with Testing Agent",
+    "status": "in_progress"
   }
 ]

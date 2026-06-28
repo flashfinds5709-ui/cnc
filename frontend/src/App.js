@@ -95,17 +95,17 @@ const proofCards = [
   },
   {
     label: "Before",
-    title: "Dull patio pavers",
+    title: "Deck before cleaning",
     image:
-      `${process.env.PUBLIC_URL}/assets/service-driveways.jpg`,
-    alt: "Concrete pavers needing a refresh",
+      `${process.env.PUBLIC_URL}/assets/deck-before.jpg`,
+    alt: "Wooden deck surface before pressure washing",
   },
   {
     label: "After",
-    title: "Clean wooden deck",
+    title: "Deck after cleaning",
     image:
-      `${process.env.PUBLIC_URL}/assets/deck-after.jpg`,
-    alt: "Clean wooden deck surface after pressure washing",
+      `${process.env.PUBLIC_URL}/assets/deck-after-2.jpg`,
+    alt: "Wooden deck surface after pressure washing",
   },
 ];
 

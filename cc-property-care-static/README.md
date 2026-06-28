@@ -20,6 +20,8 @@ cc-property-care-static/
     ├── service-driveways.jpg
     ├── service-wooden-decks.jpg
     ├── service-custom.jpg
+    ├── deck-before.jpg
+    ├── deck-after-2.jpg
     ├── deck-after.jpg
     ├── proof-walkway-before.jpg
     ├── proof-house-after.jpg
