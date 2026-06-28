@@ -1,14 +1,14 @@
 [
   {
-    "content": "Convert uploaded HEIC deck after photo into GitHub-friendly JPG asset",
+    "content": "Fix deck photo visibility by adding it to the live preview React site as well as static folder",
     "status": "completed"
   },
   {
-    "content": "Replace one After gallery image with uploaded deck photo in static site",
+    "content": "Clean extra uploaded source artifacts from GitHub static assets folder",
     "status": "completed"
   },
   {
-    "content": "Validate updated static gallery locally and with Testing Agent",
-    "status": "completed"
+    "content": "Validate deck after photo appears in live preview and static site with Testing Agent",
+    "status": "in_progress"
   }
 ]

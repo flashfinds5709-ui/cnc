@@ -102,10 +102,10 @@ const proofCards = [
   },
   {
     label: "After",
-    title: "Bright outdoor space",
+    title: "Clean wooden deck",
     image:
-      `${process.env.PUBLIC_URL}/assets/proof-patio-after.jpg`,
-    alt: "Bright clean backyard patio and pool area",
+      `${process.env.PUBLIC_URL}/assets/deck-after.jpg`,
+    alt: "Clean wooden deck surface after pressure washing",
   },
 ];
 
