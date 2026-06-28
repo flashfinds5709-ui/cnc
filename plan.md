@@ -65,6 +65,8 @@ User stories:
 - Update complete: footer contact now shows propertycare.cnc@gmail.com first with (631) 401-7026 directly underneath; Testing Agent confirmed 100% success.
 - Update complete: saved current React/static version at /app/saved_versions/react-static-current and created plain GitHub Pages-ready site at /app/cc-property-care-static with index.html, css/styles.css, js/main.js, assets/, README.md; Testing Agent confirmed 100% structure/SEO/functionality/responsive success.
 - Update complete: moved simple static site CSS/JS to repository root as styles.css and main.js alongside index.html, removed css/js subfolders, and updated README; Testing Agent confirmed 100% frontend/structure/documentation success.
+- Update complete: converted uploaded HEIC deck after photo to /app/cc-property-care-static/assets/deck-after.jpg and replaced one After gallery card with it; Testing Agent confirmed 100% frontend success.
+
 
 
 
