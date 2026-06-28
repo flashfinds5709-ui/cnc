@@ -67,6 +67,8 @@ User stories:
 - Update complete: moved simple static site CSS/JS to repository root as styles.css and main.js alongside index.html, removed css/js subfolders, and updated README; Testing Agent confirmed 100% frontend/structure/documentation success.
 - Update complete: converted uploaded HEIC deck after photo to /app/cc-property-care-static/assets/deck-after.jpg and replaced one After gallery card with it; Testing Agent confirmed 100% frontend success.
 - Bug fix complete: user could not see uploaded deck photo because live React preview had not been updated; added deck-after.jpg to React public assets and updated proof gallery in App.js while keeping simple static folder updated; Testing Agent confirmed 100% success.
+- Update complete: added both uploaded deck photos as /assets/deck-before.jpg and /assets/deck-after-2.jpg in both React preview and simple static site, replacing two proof gallery cards; Testing Agent confirmed 100% success.
+
 
 
 
