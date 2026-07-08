@@ -1,14 +1,14 @@
 [
   {
-    "content": "Add the two uploaded deck photos as local assets in both static and preview site folders",
+    "content": "Download/convert four uploaded fence before-after photos into local JPG assets",
     "status": "completed"
   },
   {
-    "content": "Replace two gallery cards with uploaded deck before/after photos",
+    "content": "Add fence before-after photos to live preview gallery and GitHub static gallery",
     "status": "completed"
   },
   {
-    "content": "Validate uploaded two-picture gallery update with Testing Agent",
-    "status": "completed"
+    "content": "Validate new fence gallery photos with build/static checks and Testing Agent",
+    "status": "in_progress"
   }
 ]

@@ -81,17 +81,17 @@ const serviceItems = [
 const proofCards = [
   {
     label: "Before",
-    title: "Weathered surfaces",
+    title: "Fence before cleaning",
     image:
-      `${process.env.PUBLIC_URL}/assets/proof-walkway-before.jpg`,
-    alt: "Outdoor walkway before detailed exterior cleaning",
+      `${process.env.PUBLIC_URL}/assets/fence-before-wide.jpg`,
+    alt: "Wooden fence before pressure washing with buildup and stains",
   },
   {
     label: "After",
-    title: "Clean first impression",
+    title: "Fence after cleaning",
     image:
-      `${process.env.PUBLIC_URL}/assets/proof-house-after.jpg`,
-    alt: "Clean home exterior and lawn after property care",
+      `${process.env.PUBLIC_URL}/assets/fence-after-wide.jpg`,
+    alt: "Wooden fence after pressure washing looking cleaner and brighter",
   },
   {
     label: "Before",
@@ -106,6 +106,20 @@ const proofCards = [
     image:
       `${process.env.PUBLIC_URL}/assets/deck-after-2.jpg`,
     alt: "Wooden deck surface after pressure washing",
+  },
+  {
+    label: "Before",
+    title: "Fence gate before cleaning",
+    image:
+      `${process.env.PUBLIC_URL}/assets/fence-before-gate.jpg`,
+    alt: "Wooden fence gate before pressure washing",
+  },
+  {
+    label: "After",
+    title: "Fence gate after cleaning",
+    image:
+      `${process.env.PUBLIC_URL}/assets/fence-after-gate.jpg`,
+    alt: "Wooden fence gate after pressure washing",
   },
 ];
 

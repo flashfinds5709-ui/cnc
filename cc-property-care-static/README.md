@@ -20,6 +20,10 @@ cc-property-care-static/
     ├── service-driveways.jpg
     ├── service-wooden-decks.jpg
     ├── service-custom.jpg
+    ├── fence-before-wide.jpg
+    ├── fence-after-wide.jpg
+    ├── fence-before-gate.jpg
+    ├── fence-after-gate.jpg
     ├── deck-before.jpg
     ├── deck-after-2.jpg
     ├── deck-after.jpg
