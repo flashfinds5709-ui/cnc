@@ -1,14 +1,14 @@
 [
   {
-    "content": "Download/convert four uploaded fence before-after photos into local JPG assets",
+    "content": "Swap fence before/after image assignments in React preview gallery",
     "status": "completed"
   },
   {
-    "content": "Add fence before-after photos to live preview gallery and GitHub static gallery",
+    "content": "Swap fence before/after image assignments in GitHub static gallery",
     "status": "completed"
   },
   {
-    "content": "Validate new fence gallery photos with build/static checks and Testing Agent",
-    "status": "completed"
+    "content": "Run build/static checks and Testing Agent bug verification",
+    "status": "in_progress"
   }
 ]

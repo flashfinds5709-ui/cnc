@@ -83,14 +83,14 @@ const proofCards = [
     label: "Before",
     title: "Fence before cleaning",
     image:
-      `${process.env.PUBLIC_URL}/assets/fence-before-wide.jpg`,
+      `${process.env.PUBLIC_URL}/assets/fence-after-wide.jpg`,
     alt: "Wooden fence before pressure washing with buildup and stains",
   },
   {
     label: "After",
     title: "Fence after cleaning",
     image:
-      `${process.env.PUBLIC_URL}/assets/fence-after-wide.jpg`,
+      `${process.env.PUBLIC_URL}/assets/fence-before-wide.jpg`,
     alt: "Wooden fence after pressure washing looking cleaner and brighter",
   },
   {
@@ -111,14 +111,14 @@ const proofCards = [
     label: "Before",
     title: "Fence gate before cleaning",
     image:
-      `${process.env.PUBLIC_URL}/assets/fence-before-gate.jpg`,
+      `${process.env.PUBLIC_URL}/assets/fence-after-gate.jpg`,
     alt: "Wooden fence gate before pressure washing",
   },
   {
     label: "After",
     title: "Fence gate after cleaning",
     image:
-      `${process.env.PUBLIC_URL}/assets/fence-after-gate.jpg`,
+      `${process.env.PUBLIC_URL}/assets/fence-before-gate.jpg`,
     alt: "Wooden fence gate after pressure washing",
   },
 ];
