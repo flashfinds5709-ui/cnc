@@ -69,6 +69,8 @@ User stories:
 - Bug fix complete: user could not see uploaded deck photo because live React preview had not been updated; added deck-after.jpg to React public assets and updated proof gallery in App.js while keeping simple static folder updated; Testing Agent confirmed 100% success.
 - Update complete: added both uploaded deck photos as /assets/deck-before.jpg and /assets/deck-after-2.jpg in both React preview and simple static site, replacing two proof gallery cards; Testing Agent confirmed 100% success.
 - Update complete: added four uploaded fence before/after photos to both React preview and simple static site galleries, resulting in 6 proof cards total; Testing Agent confirmed 100% success.
+- Bug fix complete: swapped both fence before/after image assignments in React preview and simple static site per user correction; Testing Agent confirmed 100% success.
+
 
 
 
